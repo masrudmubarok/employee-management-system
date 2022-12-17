@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import {Link} from 'react-router-dom';
 
 const SideNav = () => {
   return (
@@ -18,20 +19,18 @@ const SideNav = () => {
                 {/* Add icons to the links using the .nav-icon class
                 with font-awesome or any other icon font library */}
                 <li className="nav-item menu-open">
-                <a href="#" className="nav-link active">
+                <Link className="nav-link active" to="/">
                     <i className="nav-icon fas fa-tachometer-alt" />
                     <p>
                     Dashboard
                     </p>
-                </a>
+                </Link>
                 </li>
                 <li className="nav-item">
-                <a href="#" className="nav-link">
+                <Link className="nav-link" to="/home2">
                     <i className="nav-icon fas fa-th" />
-                    <p>
                     Widgets
-                    </p>
-                </a>
+                </Link>
                 </li>
                 <li className="nav-item">
                 <a href="#" className="nav-link">
